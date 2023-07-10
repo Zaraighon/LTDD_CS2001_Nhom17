@@ -6,22 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".Login"
     android:orientation="vertical">
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/bg_login"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_login" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:orientation="vertical"
         android:background="@drawable/login_form"
         android:layout_marginTop="400dp">
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:src="@drawable/name"
-            android:layout_marginTop="10dp"/>
+            android:src="@drawable/name" />
+
         <EditText
             android:id="@+id/username"
             android:layout_width="match_parent"
@@ -42,6 +44,16 @@
             android:layout_marginHorizontal="40dp"
             android:textSize="17sp"
             android:fontFamily="@font/opensans_semi_condensed_bold"/>
+        <EditText
+            android:id="@+id/confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/key"
+            android:layout_marginHorizontal="40dp"
+            android:textSize="17sp"
+            android:fontFamily="@font/opensans_semi_condensed_bold"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -49,13 +61,13 @@
             android:layout_marginStart="260dp"
             android:fontFamily="@font/opensans_semi_condensed_bold"/>
         <Button
-            android:id="@+id/login_btn"
-            android:layout_marginTop="15dp"
+            android:id="@+id/signup_btn"
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:background="@drawable/login_button"
-            android:text="Sign in"
+            android:text="Sign up"
             android:textSize="18sp"
             android:fontFamily="@font/opensans_condensed_extrabold"/>
         <LinearLayout
@@ -70,10 +82,10 @@
                 android:text="Don't have an account?"
                 android:fontFamily="@font/opensans_semi_condensed_bold"/>
             <TextView
-                android:id="@+id/txtSignup"
+                android:id="@+id/txtLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sign up"
+                android:text="Sign in"
                 android:layout_marginStart="5dp"
                 android:fontFamily="@font/opensans_semi_condensed_bold"
                 android:textColor="#03DA0E"/>
