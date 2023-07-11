@@ -14,15 +14,16 @@
         android:src="@drawable/bg_login" />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="600dp"
         android:orientation="vertical"
         android:background="@drawable/login_form"
-        android:layout_marginTop="400dp">
+        android:layout_marginTop="350dp">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:src="@drawable/name" />
+            android:src="@drawable/name"
+            android:layout_marginTop="10dp"/>
 
         <EditText
             android:id="@+id/username"
@@ -33,6 +34,7 @@
             android:drawableStart="@drawable/user1"
             android:layout_marginHorizontal="40dp"
             android:textSize="17sp"
+            android:padding="15dp"
             android:fontFamily="@font/opensans_semi_condensed_bold"/>
         <EditText
             android:id="@+id/password"
@@ -43,6 +45,7 @@
             android:drawableStart="@drawable/key"
             android:layout_marginHorizontal="40dp"
             android:textSize="17sp"
+            android:padding="15dp"
             android:fontFamily="@font/opensans_semi_condensed_bold"/>
         <EditText
             android:id="@+id/confirm_password"
@@ -53,16 +56,12 @@
             android:drawableStart="@drawable/key"
             android:layout_marginHorizontal="40dp"
             android:textSize="17sp"
+            android:padding="15dp"
             android:fontFamily="@font/opensans_semi_condensed_bold"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Forgot password?"
-            android:layout_marginStart="260dp"
-            android:fontFamily="@font/opensans_semi_condensed_bold"/>
+
         <Button
             android:id="@+id/signup_btn"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
@@ -75,11 +74,11 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="10dp"
-            android:layout_marginStart="180dp">
+            android:layout_marginStart="220dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Don't have an account?"
+                android:text="Have an account?"
                 android:fontFamily="@font/opensans_semi_condensed_bold"/>
             <TextView
                 android:id="@+id/txtLogin"

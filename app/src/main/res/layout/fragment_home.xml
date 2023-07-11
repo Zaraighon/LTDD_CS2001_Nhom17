@@ -55,7 +55,7 @@
             android:gravity="center"
             android:drawableEnd="@drawable/search_ic"
             android:padding="10dp"
-            android:background="@drawable/search_bar_2"
+            android:background="@drawable/search_bar"
             android:fontFamily="@font/opensans_semi_condensed_bold"/>
 
         <TextView
@@ -74,7 +74,7 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
                 android:orientation="horizontal">
 
                 <Button
@@ -82,7 +82,7 @@
                     android:layout_marginLeft="33dp"
                     android:layout_width="180dp"
                     android:layout_height="60dp"
-                    android:background="@drawable/rec_btn"
+                    android:background="@drawable/category_btn"
                     android:text="Place"
                     android:drawableStart="@drawable/place"
                     android:paddingHorizontal="20dp"
@@ -97,7 +97,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_width="180dp"
                     android:layout_height="60dp"
-                    android:background="@drawable/rec_btn"
+                    android:background="@drawable/category_btn"
                     android:text="Hotel"
                     android:drawableStart="@drawable/hotel"
                     android:paddingHorizontal="20dp"
@@ -110,7 +110,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_width="180dp"
                     android:layout_height="60dp"
-                    android:background="@drawable/rec_btn"
+                    android:background="@drawable/category_btn"
                     android:text="Entertainment"
                     android:drawableStart="@drawable/tickets"
                     android:paddingHorizontal="20dp"
@@ -123,7 +123,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_width="180dp"
                     android:layout_height="60dp"
-                    android:background="@drawable/rec_btn"
+                    android:background="@drawable/category_btn"
                     android:text="Restaurant"
                     android:drawableStart="@drawable/restaurant"
                     android:paddingHorizontal="20dp"
@@ -141,7 +141,7 @@
             android:textSize="20sp"
             android:text="Recommended"
             android:layout_marginLeft="33dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="5dp"
             android:layout_marginBottom="15dp"
             android:fontFamily="@font/opensans_semi_condensed_bold" />
 
