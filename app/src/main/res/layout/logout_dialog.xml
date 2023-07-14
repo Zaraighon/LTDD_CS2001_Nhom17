@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_logout_layout"
+    android:layout_width="270dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_logout_dialog">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dtphudu_bold"
+            android:gravity="center"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="30dp"
+            android:text="Do you want to log out?"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/logout_confirm_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logout_btn_yes"
+            android:fontFamily="@font/opensans_semi_condensed_bold"
+            android:text="Log out"
+            android:textColor="#FF0000" />
+
+        <Button
+            android:id="@+id/logout_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_cancel_logout"
+            android:text="Cancel" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
