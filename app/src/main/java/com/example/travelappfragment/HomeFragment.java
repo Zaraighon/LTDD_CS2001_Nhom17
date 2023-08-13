@@ -1,6 +1,7 @@
 package com.example.travelappfragment;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -34,8 +35,9 @@ public class HomeFragment extends Fragment {
         btn_place.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(getActivity() ,"Place clicked", Toast.LENGTH_SHORT);
-                toast.show();
+                Intent intent = new Intent(getActivity(), MapsActivity.class);
+                startActivity(intent);
+
             }
         });
         btn_entertainment.setOnClickListener(new View.OnClickListener() {

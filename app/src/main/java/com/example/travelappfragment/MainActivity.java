@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
             else if (item_id == R.id.review ) {
+//                Intent intent = new Intent(MainActivity.this,ReviewActivity.class);
+//                startActivity(intent);
                 replaceFragment(new ReviewFragment());
                 return true;
             }
