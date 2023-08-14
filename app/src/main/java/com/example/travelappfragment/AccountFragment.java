@@ -21,6 +21,7 @@ import android.widget.LinearLayout;
 public class AccountFragment extends Fragment {
 
     Button cancel_btn;
+    Button logout_confirm;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -43,6 +44,7 @@ public class AccountFragment extends Fragment {
 
         alertDialog.setView(alertCustomDialog);
         cancel_btn = (Button) alertCustomDialog.findViewById(R.id.logout_cancel);
+        logout_confirm = (Button) alertCustomDialog.findViewById(R.id.logout_confirm_btn);
 
         final AlertDialog dialog = alertDialog.create();
 
@@ -56,5 +58,13 @@ public class AccountFragment extends Fragment {
             }
         });
 
+        logout_confirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), Login.class);
+                startActivity(intent);
+                getActivity().finish();
+            }
+        });
     }
 }
