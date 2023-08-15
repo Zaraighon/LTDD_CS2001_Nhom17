@@ -26,12 +26,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         MyDatabase.execSQL("create Table users(email TEXT primary key, password TEXT)");
         MyDatabase.execSQL("create Table place(title TEXT primary key, address TEXT," +
                 "time TEXT, price TEXT, describe TEXT)");
+        MyDatabase.execSQL("create Table profile(id integer primary key AUTOINCREMENT," +
+                " avatar blob, name text, password text," +
+                "nickname text, phone text)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase MyDB, int i, int i1) {
         MyDB.execSQL("drop Table if exists users");
         MyDB.execSQL("drop Table if exists place");
+        MyDB.execSQL("drop Table if exists profile");
     }
 
     public Boolean insertData(String email, String password){

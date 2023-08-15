@@ -21,6 +21,7 @@ import android.widget.LinearLayout;
 public class AccountFragment extends Fragment {
 
     Button cancel_btn;
+
     Button logout_confirm;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -28,6 +29,15 @@ public class AccountFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_account, container, false);
         Button btn_logout = (Button) v.findViewById(R.id.btn_logout);
+        Button profile = (Button) v.findViewById(R.id.profile);
+
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),EditProfile.class);
+                startActivity(intent);
+            }
+        });
 
         btn_logout.setOnClickListener(new View.OnClickListener() {
             @Override
