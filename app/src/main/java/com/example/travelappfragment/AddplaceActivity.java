@@ -75,7 +75,7 @@ public class AddplaceActivity extends AppCompatActivity {
                 }
             }
         });
-        binding.address.setOnClickListener(new View.OnClickListener() {
+        binding.address1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(AddplaceActivity.this, MapsActivity.class);
