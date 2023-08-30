@@ -145,28 +145,12 @@
             android:layout_marginBottom="15dp"
             android:fontFamily="@font/opensans_semi_condensed_bold" />
 
-        <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-        </HorizontalScrollView>
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rcm_rv1"
             android:scrollbars="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rcm_rv2"
-            android:scrollbars="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rcm_rv3"
-            android:scrollbars="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
 
     </LinearLayout>
 

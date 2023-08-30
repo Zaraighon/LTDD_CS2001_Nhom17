@@ -4,7 +4,11 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,8 +17,14 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class HomeFragment extends Fragment {
+import java.util.ArrayList;
 
+public class HomeFragment extends Fragment {
+    ArrayList<Places> placesArrayList;
+    private String[] placeName;
+    private int[] imgSourceID;
+    private String[] placeDes;
+    private RecyclerView recyclerView;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -63,5 +73,49 @@ public class HomeFragment extends Fragment {
         });
 
         return v;
+    }
+    //Day la phan code cho places
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        dataInitialize();
+        recyclerView = view.findViewById(R.id.rcm_rv1);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.setHasFixedSize(true);
+        HomePlaceAdapter homePlaceAdapter = new HomePlaceAdapter(getContext(), placesArrayList);
+        recyclerView.setAdapter(homePlaceAdapter);
+        homePlaceAdapter.notifyDataSetChanged();
+    }
+
+    private void dataInitialize() {
+        placesArrayList = new ArrayList<>();
+
+        placeName = new String[]{
+                getString(R.string.PName1),
+                getString(R.string.PName2),
+                getString(R.string.PName3),
+                getString(R.string.PName4),
+
+        };
+
+        placeDes = new String[]{
+                getString(R.string.PDes1),
+                getString(R.string.PDes2),
+                getString(R.string.PDes3),
+                getString(R.string.PDes4),
+        };
+
+        imgSourceID = new int[]{
+                R.drawable.dalat,
+                R.drawable.haiphong,
+                R.drawable.hanoi,
+                R.drawable.phuquoc
+        };
+
+
+        for (int i = 0; i < placeName.length; i++) {
+            Places places = new Places(placeName[i], placeDes[i], imgSourceID[i]);
+            placesArrayList.add(places);
+        }
     }
 }

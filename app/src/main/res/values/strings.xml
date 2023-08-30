@@ -49,5 +49,27 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+
+
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="PName1">Đà Lạt</string>
+    <string name="PDes1">Đà Lạt, the capital of Lâm Đồng Province in southern Vietnam’s Central Highlands,</string>
+    <string name="PName2">Hải Phòng</string>
+    <string name="PDes2">Đà Lạt, the capital of Lâm Đồng Province in southern Vietnam’s Central Highlands,</string>
+    <string name="PDes3">Đà Lạt, the capital of Lâm Đồng Province in southern Vietnam’s Central Highlands,</string>
+    <string name="PName3">Hà Nội</string>
+    <string name="PDes4">Đà Lạt, the capital of Lâm Đồng Province in southern Vietnam’s Central Highlands, </string>
+    <string name="PName4">Phú Quốc</string>
+    <string-array name="PNames">
+        <item>Đà Lạt</item>
+        <item>Hải Phòng</item>
+        <item>Phú Quốc</item>
+        <item>Hà Nội</item>
+        <item>Phú Yên</item>
+        <item>Quy Nhơn</item>
+        <item>Cần Thơ</item>
+        <item>Tiên Sơn</item>
+        <item>Thủy Châu</item>
+        <item>Hạ Long</item>
+    </string-array>
 </resources>

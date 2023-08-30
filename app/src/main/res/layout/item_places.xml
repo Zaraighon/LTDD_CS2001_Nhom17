@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgPlace"
+            android:layout_width="166dp"
+            android:layout_height="134dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.333"
+            app:srcCompat="@drawable/dalat" />
+
+        <TextView
+            android:id="@+id/txtPlaceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/PName1"
+            app:layout_constraintStart_toEndOf="@+id/imgPlace"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtPlaceDesciption"
+            android:layout_width="227dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="4dp"
+            android:text="Đà Lạt, the capital of Lâm Đồng Province in southern Vietnam’s Central Highlands, is centered around a lake and golf course, and surrounded by hills, pine forests, lakes and waterfalls. Known as the “City of Eternal Spring” for its distinctive temperate climate, Đà Lạt was developed as a resort by the French in the early 1900s, and many reminders of its colonial heritage remain."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.727"
+            app:layout_constraintStart_toEndOf="@+id/imgPlace"
+            app:layout_constraintTop_toBottomOf="@+id/txtPlaceName"
+            app:layout_constraintVertical_bias="0.023"
+            android:scrollbars="none"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
