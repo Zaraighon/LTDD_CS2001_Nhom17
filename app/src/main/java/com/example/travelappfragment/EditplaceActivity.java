@@ -5,12 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.ContentValues;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.travelappfragment.databinding.ActivityAddplaceBinding;
 import com.example.travelappfragment.databinding.ActivityEditplaceBinding;
 
 public class EditplaceActivity extends AppCompatActivity {
+    EditText edt_title, edt_address, edt_describe, edt_price, edt_time;
 
     ActivityEditplaceBinding binding;
     DatabaseHelper databaseHelper;
@@ -20,6 +22,14 @@ public class EditplaceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityEditplaceBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        edt_title = findViewById(R.id.title);
+        edt_address = findViewById(R.id.address);
+        edt_time = findViewById(R.id.time);
+        edt_describe = findViewById(R.id.describe);
+        edt_price = findViewById(R.id.price);
+
+
+
 
         databaseHelper = new DatabaseHelper(this);
 

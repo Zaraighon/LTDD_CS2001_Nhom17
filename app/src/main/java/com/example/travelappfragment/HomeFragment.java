@@ -2,6 +2,7 @@ package com.example.travelappfragment;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -17,6 +18,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.android.material.button.MaterialButtonToggleGroup;
+
 import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
@@ -31,10 +34,19 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View v =  inflater.inflate(R.layout.fragment_home, container, false);
         ImageView img_view = (ImageView) v.findViewById(R.id.noti_icon);
+        ImageView img_avatar = (ImageView) v.findViewById(R.id.avatar);
         Button btn_place = (Button) v.findViewById(R.id.btn_place);
         Button btn_entertainment = (Button) v.findViewById(R.id.btn_entertainment);
         Button btn_restaurant = (Button) v.findViewById(R.id.btn_restaurant);
         Button btn_hotel = (Button) v.findViewById(R.id.btn_hotel);
+
+        img_avatar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), EditProfile.class);
+                startActivity(intent);
+            }
+        });
         img_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

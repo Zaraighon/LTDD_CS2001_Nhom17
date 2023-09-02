@@ -3,12 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
-<!--     cấp quyền cho camera va bộ nhớ trong-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- cấp quyền cho camera va bộ nhớ trong -->
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -23,6 +22,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TravelAppFragment"
         tools:targetApi="31">
+        <activity
+            android:name=".HotelActitvity"
+            android:exported="false" />
         <activity
             android:name=".EditProfile"
             android:exported="false" />
@@ -71,6 +73,5 @@
         </activity>
         <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" />
     </application>
-
 
 </manifest>
