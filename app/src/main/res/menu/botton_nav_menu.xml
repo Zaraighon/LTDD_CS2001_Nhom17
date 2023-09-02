@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item android:title="Explore"
         android:id="@+id/home"
-        android:icon="@drawable/home"/>
+        android:icon="@drawable/home"
+        app:showAsAction="never"/>
     <item android:title="Review"
         android:id="@+id/review"
-        android:icon="@drawable/pen"/>
+        android:icon="@drawable/pen"
+        app:showAsAction="never"/>
     <item android:title="Favorite"
         android:id="@+id/favorite"
-        android:icon="@drawable/lover"/>
+        android:icon="@drawable/lover"
+        app:showAsAction="never"/>
     <item android:title="Account"
         android:id="@+id/account"
-        android:icon="@drawable/acc_ic"/>
+        android:icon="@drawable/acc_ic"
+        app:showAsAction="never"/>
 
 </menu>

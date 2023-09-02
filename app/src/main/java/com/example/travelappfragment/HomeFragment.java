@@ -79,8 +79,8 @@ public class HomeFragment extends Fragment {
         btn_hotel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(getActivity() ,"Hotel clicked", Toast.LENGTH_SHORT);
-                toast.show();
+                Intent intent = new Intent(getActivity(), HotelActitvity.class);
+                startActivity(intent);
             }
         });
 
